@@ -2,4 +2,5 @@
     <string name="app_name">And_Work_1</string>
     <string name="activity_main_text">Hello!</string>
     <string name="activity_name_cancel_button_title">Close me</string>
+    <string name="activity_main_cat_toast">Don\'t close me. I will be meow for you</string>
 </resources>
