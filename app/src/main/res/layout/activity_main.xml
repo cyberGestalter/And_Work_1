@@ -14,18 +14,38 @@
         app:title="@string/app_name"
         android:background="@color/purple_500"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_main_text"
-        android:gravity="center"
-        android:layout_gravity="center_horizontal"/>
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_main_text"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/activity_name_cancel_button_title"
-        android:onClick="closeApp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/activity_name_cancel_button_title"
+            android:onClick="closeApp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cat"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 </LinearLayout>
