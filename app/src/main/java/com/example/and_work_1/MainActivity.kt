@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun closeApp(view: View) {
+        Toast.makeText(this, getString(R.string.activity_main_cat_toast_2), Toast.LENGTH_SHORT)
+            .show()
         finish()
     }
 
